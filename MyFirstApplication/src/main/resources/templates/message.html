@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Message Expression</title>
+</head>
+<body>
+   	
+		<h1>Selection Expressions Demo</h1>
+<h2>Student Details:</h2>
+<div th:object="${stud}">
+    <p> Name: <strong th:text="*{studname}"></strong></p>
+    <p> ID: <strong th:text="*{studid}"></strong></p>
+    
+</div>
+<h1>Message Expressions Demo:</h1>
+<h2 th:text="#{app.name}"></h2>
+<h2 th:text="#{welcome.message}"></h2>
+		
+	</div>
+	<dive>
+		<a th:href="@{/display}"> display </a>
+		<a th:href="@{/}"> All Students</a>
+	</dive>
+</body>
+</html>
